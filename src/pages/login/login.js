@@ -3,19 +3,19 @@ import Menu from './../../components/menu';
 import Footer from './../../components/footer';
 import { Form, Col, Button, Row } from 'react-bootstrap';
 import './style.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function Login() {
   return (
     <div>
       <Menu />
-      <main className="login-form">
-        <Row>
-          <img src="" alt="logotipo" />
+      <main className="login-form px-5">
+        <Row className="d-flex justify-content-center">
+          <img src={require("../../../src/img/logo.svg")} alt="logotipo" />
         </Row>
         <Form>
-          <Form.Row>
+          <Form.Row className="mb-3">
             <Form.Group as={Col} controlId="formGridNumber">
               <Button variant="secondary" type="button" as={Col} xs="12">
                 LOGIN COM O GOOGLE
@@ -23,25 +23,25 @@ function Login() {
             </Form.Group>
           </Form.Row>
 
-          <Row className="d-flex flex-row">
+          <Row className="d-flex flex-row mb-3">
             <hr className="hr-login col-3" />
             <p className="col-1 text-center">ou</p>
             <hr className="hr-login col-3" />
           </Row>
 
-          <Form.Row>
+          <Form.Row className="mb-3">
             <Form.Group as={Col} controlId="formGridText">
               <Form.Control type="text" placeholder="USUÁRIO" />
             </Form.Group>
           </Form.Row>
 
-          <Form.Row>
+          <Form.Row className="mb-3">
             <Form.Group as={Col} controlId="formGridNumber">
               <Form.Control type="password" placeholder="SENHA" />
             </Form.Group>
           </Form.Row>
 
-          <Form.Row>
+          <Form.Row className="mb-3">
             <Form.Group as={Col} controlId="formGridNumber">
               <Button variant="secondary" type="button" as={Col} xs="12">
                 ENTRAR
