@@ -8,24 +8,26 @@ import Profissional from '../../components/cadastro_prof/profissional'
 import Termos from '../../components/cadastro_prof/termos'
 
 function Professor() {
-    return (
-        <div className="px-5">
-            <Menu />
-            <h1>Cadastro Professor</h1>
-            <hr/>
-            <DadosProfessor />
-            <hr/>
-            <DadosAcademicos />
-            <hr/>
-            <DadosComplementares />
-            <hr/>
-            <Profissional />
-            <hr/>
-            <Termos />
-            <hr/>
-            <Footer />
-        </div>
-    );
+  return (
+    <>
+      <Menu />
+      <div className="px-5">
+        <h1 className="my-5">CADASTRO</h1>
+        <hr />
+        <DadosProfessor />
+        <hr />
+        <DadosAcademicos />
+        <hr />
+        <DadosComplementares />
+        <hr />
+        <Profissional />
+        <hr />
+        <Termos />
+        <hr />
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default Professor;

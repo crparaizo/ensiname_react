@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class DadosProfessor extends Component {
   render() {
     return (
-      <>
-        <h2>DADOS PESSOAIS</h2>
+      <section className="my-5">
+        <h2 className="mb-4">DADOS PESSOAIS</h2>
         <Form>
           <Form.Row>
             <Form.Group as={Col} xs="12" sm="12" md="6" controlId="formGridText">
@@ -72,7 +72,7 @@ class DadosProfessor extends Component {
           </Form.Row>
 
         </Form>
-      </>
+      </section>
     )
   }
 }

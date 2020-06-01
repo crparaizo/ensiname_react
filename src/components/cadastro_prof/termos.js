@@ -5,9 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class DadosProfessor extends Component {
   render() {
     return (
-      <>
+      <section className="my-5">
         <Form>
-
           <Form.Row className="d-flex flex-row justify-content-between align-items-baseline">
             <Form.Group controlId="formGridCheckbox" className="d-flex flex-row align-items-center">
               <input type="checkbox" className="mr-2"/>
@@ -22,9 +21,8 @@ class DadosProfessor extends Component {
               </Button>
             </div>
           </Form.Row>
-
         </Form>
-      </>
+      </section>
     )
   }
 }
