@@ -28,16 +28,16 @@ function Pedagogia() {
         </div>
       </Row>
 
-      <Modal show={isOpen} onHide={hideModal}>
+      <Modal size="lg" show={isOpen} onHide={hideModal}>
         <Modal.Header>
           <Modal.Title>Agende seu horário</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Veja abaixo os horários em que o |Nome Professor| está disponivel e agende já a sua primeira aula.</p>
+          <p className="my-5">Veja abaixo os horários em que o Professor está disponivel e agende já a sua primeira aula.</p>
           <Form>
             <Form.Row>
-              <Form.Group as={Col} xs="6" sm="6" md="4" controlId="formGridDatetimeLocal">
-                <Form.Label>Confira a agenda</Form.Label>
+              <Form.Group as={Col} controlId="formGridDatetimeLocal" className="d-flex flex-row align-items-center">
+                <Form.Label className="mr-2 mb-0">Confira a agenda: </Form.Label>
                 <input type="datetime-local" />
               </Form.Group>
             </Form.Row>
@@ -45,7 +45,7 @@ function Pedagogia() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={hideModal}>Cancelar</Button>
-          <Button variant="primary">Agendar</Button>
+          <Button variant="secondary">Agendar</Button>
         </Modal.Footer>
       </Modal>
     </section>
