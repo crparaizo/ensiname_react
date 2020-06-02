@@ -4,14 +4,30 @@ class Menu extends Component {
     render() {
         return (
             <div>
-                <h1> Menu....</h1>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/aluno">Aluno</a></li>
-                    <li><a href="/professor">Professor</a></li>
-                    <li><a href="/aula">Aula</a></li>
-                    <li><a href="/login">Login</a></li>
-                </ul>
+                <nav className="navbar navbar-expand-lg">
+                    <div className="">
+                        <img src={require("../../src/img/logo.svg")} alt="logotipo" height="32px" />
+                    </div>
+                    <div className="collapse navbar-collapse n" >
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/">Home</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/aluno">Aluno</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/professor">Professor</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/aula">Aula</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         )
     }
