@@ -1,0 +1,67 @@
+.div1{
+    background-color: lightgray;
+}
+
+.font36{
+    font-size: 36px;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.vantagens{
+    justify-content: center;
+}
+
+.conteudo_vantagem{
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.planos{
+    background-color: lightgray;
+}
+
+.plano_card{
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.professor{
+    flex-direction: column;   
+    background-color: gray; 
+}
+
+.texto_professor{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo_professor{
+    justify-content: space-around;    
+}
+
+.contato{
+    justify-content: space-around;
+}
+
+.fale_conosco{
+    background-color: darkgray;
+}
+
+.fale_item{
+    display: flex;
+}
+
+.form_contato{
+    flex-direction: column;
+}

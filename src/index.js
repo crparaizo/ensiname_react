@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import Main from './pages/landing/ladingPage'
+import Main from './pages/landing/landingPage'
 import Login from './pages/login/login'
 import Aluno from './pages/cadastro_aluno/cadastroAluno'
 import Professor from './pages/cadastro_prof/cadastroProf'
