@@ -1,4 +1,84 @@
-.login-form {
-  max-width: 500px;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 100px;
   margin: auto;
+}
+
+.outline-ensiname {
+    color: #220B50 !important;
+    border-color: #220B50 !important;
+}
+
+.outline-ensiname:hover {
+  background-color: #220B50 !important;
+  color: #fff !important;
+}
+
+.ensiname:hover {
+  background-color: #fff !important;
+  color: #220B50 !important;
+}
+.ensiname {
+  background-color: #220B50 !important;
+  color: #fff !important;
+  border-color: #220B50 !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.button-icon {
+  max-height: 24px;
+  max-width: 24px;
+  margin: 0;
+}
+
+#root, #root > div {
+  height: 100%;
+}
+
+.content {
+  background: url('../../img/girl-watching-video.png') no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.login-form {
+  max-width: 650px;
+  margin: auto;
+}
+
+.logo-img{
+  max-width: 100%;
+}
+
+.helper-text {
+  font-size: .85em;
+}
+
+@media (max-width: 764px) {
+  form {
+    padding: 0 10px;
+  }
+
+  body {
+    height: fit-content;
+    overflow: auto;
+  }
+
+  #root, #root > div {
+    height: fit-content;
+  }
 }
