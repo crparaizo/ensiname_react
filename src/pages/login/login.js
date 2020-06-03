@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Menu from './../../components/menu';
 import Footer from './../../components/footer';
 import { Form, Col, Button, Row } from 'react-bootstrap';
@@ -7,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Login() {
   return (
-    <main className="content">
+    <div className="login">
       <Menu />
       <div className="login-form px-md-5 px-3">
         <Row className="d-flex justify-content-center pl-3 pb-md-4 pt-1">
@@ -17,7 +18,7 @@ function Login() {
           <Form.Row className="mb-0">
             <Form.Group as={Col} controlId="formGridCheckbox" className="d-flex flex-row justify-content-end mb-0">
               <Form.Label className="helper-text mr-2">Novo por aqui?</Form.Label>
-              <a href="#" className="helper-text">Crie sua conta!</a>
+                <Link to="/new_account" className="helper-text">Crie sua conta!</Link>
             </Form.Group>
           </Form.Row>
           <Form.Row className="mb-0">
@@ -70,7 +71,7 @@ function Login() {
       <div className="footer" >
         <Footer />
       </div>
-    </main >
+    </div >
   );
 };
 

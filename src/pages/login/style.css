@@ -1,12 +1,14 @@
-body {
+.login {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   height: 100vh;
   overflow: hidden;
+  background: url('../../img/girl-watching-video.png') no-repeat;
+  background-size: cover;
 }
 
-form {
+.login form {
   background-color: #fff;
   border-radius: 5px;
   padding: 0 100px;
@@ -33,25 +35,19 @@ form {
   border-color: #220B50 !important;
 }
 
-.footer {
+.login .footer {
   position: absolute;
   bottom: 0;
   width: 100vw;
 }
 
-.button-icon {
+.login .button-icon {
   max-height: 24px;
   max-width: 24px;
   margin: 0;
 }
 
 #root, #root > div {
-  height: 100%;
-}
-
-.content {
-  background: url('../../img/girl-watching-video.png') no-repeat;
-  background-size: cover;
   height: 100%;
 }
 
@@ -69,11 +65,11 @@ form {
 }
 
 @media (max-width: 764px) {
-  form {
+  .login form {
     padding: 0 10px;
   }
 
-  body {
+  bod.loginy {
     height: fit-content;
     overflow: auto;
   }
