@@ -11,6 +11,8 @@ import Professor from './pages/cadastro_prof/cadastroProf'
 import Aula from './pages/aula/aula'
 import NaoEncontrada from './pages/naoencontrada/naoencontrada'
 
+import Testando from './pages/landing/teste'
+
 const rotas = (
     <BrowserRouter>
         <div>
@@ -20,6 +22,7 @@ const rotas = (
                 <Route exact path="/aluno" component={Aluno} />
                 <Route exact path="/professor" component={Professor} />
                 <Route exact path="/aula" component={Aula} />
+                <Route exact path="/teste" component={Testando} />
                 <Route component={NaoEncontrada} /> {/* Esse é o default do Switch, nenhuma outra Route será lida dps disso */}
             </Switch>
         </div>
