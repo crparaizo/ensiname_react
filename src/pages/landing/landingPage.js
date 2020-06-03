@@ -1,14 +1,19 @@
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import './landingPage.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';
 
 function Main() {
     return (
         <div>
-            <div className="banner">
+            <div className="banner d-flex flex-column">
                 <Menu />
+                <div className="banner-text ml-5">
+                  <h1>Ensina-Me</h1>
+                  <p>Aulas online com professores especializados para o ensino fundamental</p>
+                </div>
             </div>
             <div className="textCenter">
                 <p className="font36">A melhor plataforma para aulas particulares online</p>

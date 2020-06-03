@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Aula() {
   return (
-    <div>
+    <div className="content">
       <Menu />
       <main className="px-5">
         <h1 className="mt-5">Plano de Ensino</h1>
