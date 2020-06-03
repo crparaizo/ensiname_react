@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { Form, Col, Button } from 'react-bootstrap';
+import { Form, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './dados_aluno.css'
 
@@ -14,7 +14,7 @@ class DadosAlunos extends Component {
             <Form.Group as={Col} xs="12" controlId="formGridText" className="d-flex flex-row align-items-center">
               {/* <Form.Label>Nome</Form.Label> */}
               <Form.Control type="text" placeholder="Número do cartão" />
-              <img className="card-icon" src={require("../../../src/img/camera.svg")} />
+              <img className="card-icon" src={require("../../../src/img/camera.svg")} alt="Digitalizar cartão"/>
             </Form.Group>
 
             <Form.Group as={Col} xs="12" controlId="formGridText">
