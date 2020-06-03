@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import Menu from './../../components/menu';
 import Footer from './../../components/footer';
@@ -21,7 +21,7 @@ function NovaConta() {
             </Link>
           </Col>
           <Col className="border-left pl-5 d-flex flex-column justify-content-center">
-            <Link to="/professor" className="perfil-professor d-flex flex-column justify-content-center">
+            <Link to="/professor1" className="perfil-professor d-flex flex-column justify-content-center">
               <span className="perfil">Professor</span>
               <span className="acao">Quero dar aulas!</span>
             </Link>

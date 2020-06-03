@@ -1,22 +1,22 @@
 import React from 'react';
 import Menu from './../../components/menu';
 import Footer from './../../components/footer';
-import DadosAlunos from '../../components/cadastro_aluno/dados_aluno'
+import DadosProfessor from '../../components/cadastro_prof/dados_prof'
 import { Col, Container, Row } from 'react-bootstrap';
 import './style.css'
 
-function Aluno() {
+function Professor() {
   return (
-    <div className="aluno">
+    <div className="cadastro-professor">
       <Menu />
       <Container>
         <Row>
           <Col className="my-5">
             <h1 className="">CADASTRO</h1>
-            <p>Passo 1/4: Cadastro do aluno</p>
+            <p>Passo 1/3: Cadastro do professor</p>
           </Col>
           <Col className="my-5">
-            <DadosAlunos/>
+            <DadosProfessor />
           </Col>
         </Row>
       </Container>
@@ -27,4 +27,4 @@ function Aluno() {
   );
 };
 
-export default Aluno;
+export default Professor;

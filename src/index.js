@@ -11,7 +11,9 @@ import Aluno2 from './pages/cadastro_aluno/cadastroAluno02'
 import Aluno3 from './pages/cadastro_aluno/cadastroAluno03'
 import Aluno4 from './pages/cadastro_aluno/cadastroAluno04'
 import Aluno5 from './pages/cadastro_aluno/cadastroAluno05'
-import Professor from './pages/cadastro_prof/cadastroProf'
+import Professor1 from './pages/cadastro_prof/cadastroProf01'
+import Professor2 from './pages/cadastro_prof/cadastroProf02'
+import Professor3 from './pages/cadastro_prof/cadastroProf03'
 import Aula from './pages/aula/aula'
 import NovaConta from './pages/nova_conta/nova_conta'
 import NaoEncontrada from './pages/naoencontrada/naoencontrada'
@@ -29,7 +31,9 @@ const rotas = (
                 <Route exact path="/aluno3" component={Aluno3} />
                 <Route exact path="/aluno4" component={Aluno4} />
                 <Route exact path="/aluno5" component={Aluno5} />
-                <Route exact path="/professor" component={Professor} />
+                <Route exact path="/professor1" component={Professor1} />
+                <Route exact path="/professor2" component={Professor2} />
+                <Route exact path="/professor3" component={Professor3} />
                 <Route exact path="/aula" component={Aula} />
                 <Route exact path="/teste" component={Testando} />
                 <Route exact path="/new_account" component={NovaConta} />

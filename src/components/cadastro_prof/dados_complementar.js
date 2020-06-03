@@ -1,42 +1,63 @@
 import React, { Component } from 'react'
-import { Form, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Form, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class DadosComplementares extends Component {
+class DadosEndereco extends Component {
   render() {
     return (
-      <section className="my-5">
-        <h2 className="mb-4">FORMAÇÃO COMPLEMENTAR</h2>
+      <section className="form-content my-5">
+        <h2 className="mb-4">Endereço</h2>
         <Form>
-
-          <Form.Row className="mb-4">
-            <Form.Group as={Col} xs="12" sm="12" md="6" controlId="formGridText">
-              <Form.Label>Instituição</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
-
-            <Form.Group as={Col} xs="9" sm="9" md="3" controlId="formGridText">
-              <Form.Label>Área/Matéria</Form.Label>
-              <Form.Control type="text" />
-            </Form.Group>
-
-            <Form.Group as={Col} xs="3" sm="3" md="3" controlId="formGridNumber">
-              <Form.Label>Ano de conclusão</Form.Label>
-              <Form.Control type="number" />
-            </Form.Group>
-          </Form.Row>
-
           <Form.Row>
-            <Form.Group as={Col} xs="12" controlId="exampleForm.ControlTextarea1" className="d-flex justify-content-end">
-              <Button variant="secondary" type="button">
-                ADICIONAR FORMAÇÃO
-              </Button>
+            <Form.Group as={Col} xs="12" controlId="formGridText">
+              {/* <Form.Label>Nome</Form.Label> */}
+              <Form.Control type="text" placeholder="CEP" />
+            </Form.Group>
+
+            <Form.Group as={Col} xs="8" controlId="formGridText">
+              {/* <Form.Label>Sobrenbome</Form.Label> */}
+              <Form.Control type="text" placeholder="Cidade" disabled />
+            </Form.Group>
+
+            <Form.Group as={Col} xs="4" controlId="formGridText">
+              {/* <Form.Label>CPF</Form.Label> */}
+              <Form.Control type="text" placeholder="Estado" disabled />
+            </Form.Group>
+
+            <Form.Group as={Col} xs="12" controlId="formGridText">
+              {/* <Form.Label>CPF</Form.Label> */}
+              <Form.Control type="text" placeholder="Endereço" disabled />
+            </Form.Group>
+
+            <Form.Group as={Col} xs="6" controlId="formGridText">
+              {/* <Form.Label>RG</Form.Label> */}
+              <Form.Control type="number" placeholder="Numero" />
+            </Form.Group>
+
+            <Form.Group as={Col} xs="6" controlId="formGridText">
+              {/* <Form.Label>Sexo</Form.Label> */}
+              <Form.Control type="text" placeholder="Bairro" disabled />
+            </Form.Group>
+
+            <Form.Group as={Col} xs="12" controlId="formGridText">
+              {/* <Form.Label>Sexo</Form.Label> */}
+              <Form.Control type="text" placeholder="Complemento" />
+            </Form.Group>
+
+          </Form.Row>
+
+          <Form.Row className="mb-0">
+            <Form.Group as={Col} controlId="formGridNumber" className="text-right">
+              <Link to="/professor1" as={Col} xs="12" className="btn outline-ensiname mr-2">Voltar</Link>
+              <Link to="/professor3" as={Col} xs="12" className="btn ensiname">Próximo</Link>
             </Form.Group>
           </Form.Row>
+
         </Form>
       </section>
     )
   }
 }
 
-export default DadosComplementares;
+export default DadosEndereco;
