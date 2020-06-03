@@ -1,0 +1,35 @@
+.nova_conta {
+  background: url('../../img/woman-and-boy.png') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+}
+
+.nova_conta .perfis{
+  height: 50vh;
+}
+
+.nova_conta .perfis a {
+  color: #fff;
+}
+
+.nova_conta .perfis a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+.nova_conta .perfil{
+  font-size: 1.5em;
+}
+
+.nova_conta .acao {
+  font-size: 5em;
+  line-height: 75px;
+}
+
+.nova_conta .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}

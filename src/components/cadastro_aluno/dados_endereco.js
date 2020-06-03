@@ -1,61 +1,57 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { Form, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './dados_aluno.css'
 
-class DadosBancarios extends Component {
+class DadosEndereco extends Component {
   render() {
     return (
       <section className="form-content my-5">
-        <h2 className="mb-4">Dados Bancários</h2>
+        <h2 className="mb-4">Endereço para cobrança</h2>
         <Form>
           <Form.Row>
             <Form.Group as={Col} xs="12" controlId="formGridText">
               {/* <Form.Label>Nome</Form.Label> */}
-              <Form.Control type="text" placeholder="Banco" />
+              <Form.Control type="text" placeholder="CEP" />
             </Form.Group>
 
             <Form.Group as={Col} xs="8" controlId="formGridText">
               {/* <Form.Label>Sobrenbome</Form.Label> */}
-              <Form.Control type="text" placeholder="Tipo de Conta" />
+              <Form.Control type="text" placeholder="Cidade" disabled/>
             </Form.Group>
 
             <Form.Group as={Col} xs="4" controlId="formGridText">
               {/* <Form.Label>CPF</Form.Label> */}
-              <Form.Control type="text" placeholder="Nome" />
+              <Form.Control type="text" placeholder="Estado" disabled/>
             </Form.Group>
 
             <Form.Group as={Col} xs="12" controlId="formGridText">
               {/* <Form.Label>CPF</Form.Label> */}
-              <Form.Control type="text" placeholder="CPF" />
+              <Form.Control type="text" placeholder="Endereço" disabled />
             </Form.Group>
 
             <Form.Group as={Col} xs="6" controlId="formGridText">
               {/* <Form.Label>RG</Form.Label> */}
-              <Form.Control type="number" placeholder="Agência" />
+              <Form.Control type="number" placeholder="Numero" />
             </Form.Group>
 
             <Form.Group as={Col} xs="6" controlId="formGridText">
               {/* <Form.Label>Sexo</Form.Label> */}
-              <Form.Control type="text" placeholder="DV Agência" />
-            </Form.Group>
-            <Form.Group as={Col} xs="6" controlId="formGridText">
-              {/* <Form.Label>RG</Form.Label> */}
-              <Form.Control type="number" placeholder="Conta" />
+              <Form.Control type="text" placeholder="Bairro" disabled/>
             </Form.Group>
 
-            <Form.Group as={Col} xs="6" controlId="formGridText">
+            <Form.Group as={Col} xs="12" controlId="formGridText">
               {/* <Form.Label>Sexo</Form.Label> */}
-              <Form.Control type="text" placeholder="DV Conta" />
+              <Form.Control type="text" placeholder="Complemento" />
             </Form.Group>
-
 
           </Form.Row>
 
           <Form.Row className="mb-0">
             <Form.Group as={Col} controlId="formGridNumber" className="text-right">
-              <Link to="/professor2" as={Col} xs="12" className="btn outline-ensiname mr-2">Voltar</Link>
-              <Link to="/" as={Col} xs="12" className="btn ensiname">Finalizar</Link>
+              <Link to="/aluno2" as={Col} xs="12" className="btn outline-ensiname mr-2">Voltar</Link>
+              <Link to="/aluno4" as={Col} xs="12" className="btn ensiname">Próximo</Link>
             </Form.Group>
           </Form.Row>
 
@@ -65,4 +61,4 @@ class DadosBancarios extends Component {
   }
 }
 
-export default DadosBancarios;
+export default DadosEndereco;

@@ -1,5 +1,12 @@
-.content{
-  background-color: #e5e5e5;
+.banner-aula {
+  background: url('../../img/grils.png') no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.aula th, .aula h1 {
+
+  color: #220B50;
 }
 
 .atividade {
@@ -9,9 +16,11 @@
 .data-entrega{
   text-align: center;
   width: 20%;
+
 }
 
 .data-aula{
   text-align: center;
   width: 20%;
+
 }
