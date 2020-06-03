@@ -15,7 +15,7 @@ function NovaConta() {
         </Row>
         <Row className="perfis mb-5">
           <Col className="d-flex flex-column justify-content-center">
-            <Link to="/aluno" className="perfil-aluno d-flex flex-column justify-content-center">
+            <Link to="/aluno1" className="perfil-aluno d-flex flex-column justify-content-center">
               <span className="perfil">Aluno</span>
               <span className="acao">Quero estudar!</span>
             </Link>

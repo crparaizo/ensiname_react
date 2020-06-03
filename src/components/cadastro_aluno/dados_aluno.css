@@ -1,0 +1,13 @@
+.form-content {
+  background-color: #fff;
+  color: #220B50;
+  border-radius: 5PX;
+
+  padding: 15PX;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}

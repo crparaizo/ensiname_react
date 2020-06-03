@@ -1,56 +1,34 @@
-import React, { Component, useState } from 'react'
-import { Form, Button, Row, Modal, Col } from 'react-bootstrap';
+import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
+import { Form, Col, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './dados_aluno.css'
 
-function Pedagogia() {
+class Pedagogia extends Component {
+  render() {
+    return (
+      <section className="form-content my-5">
+        <h2 className="mb-5">Agende um horário com um de nossos pedagogos</h2>
+        <p>Horários disponíveis:</p>
+        <Form>
+          <Form.Row className="mb-5">
+            <Form.Group as={Col} xs="12" controlId="formGridDatetime">
+              {/* <Form.Label>Data de Nasc.</Form.Label> */}
+              <Form.Control type="datetime-local" />
+            </Form.Group>
+          </Form.Row>
 
-  const [isOpen, setIsOpen] = useState(false);
-  const showModal = () => {
-    setIsOpen(true);
-  };
+          <Form.Row className="">
+            <Form.Group as={Col} controlId="formGridNumber" className="text-right">
+              <Link to="/" as={Col} xs="12" className="btn outline-ensiname mr-2">Agendar depois</Link>
+              <Link to="/aula" as={Col} xs="12" className="btn ensiname">Agendar agora</Link>
+            </Form.Group>
+          </Form.Row>
 
-  const hideModal = () => {
-    setIsOpen(false);
-  };
-
-  return (
-
-    <section className="my-5">
-      <Row className="d-flex align-items-center">
-        <div className="col-md-9">
-          <h2>ATENDIMENTO PEDAGÓGICO ESPECIALIZADO</h2>
-          <p>Seja atendido por nossa equipe pedagógica e receba um planejamento de estudos inteiramente personalizado, individualizado de acordo com as suas necessidades, características e habilidades.</p>
-        </div>
-        <div className="col-md-3 text-right">
-          <Button variant="secondary" type="button" onClick={showModal}>
-            AGENDE AGORA
-          </Button>
-        </div>
-      </Row>
-
-      <Modal size="lg" show={isOpen} onHide={hideModal}>
-        <Modal.Header>
-          <Modal.Title>Agende seu horário</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p className="my-5">Veja abaixo os horários em que o Professor está disponivel e agende já a sua primeira aula.</p>
-          <Form>
-            <Form.Row>
-              <Form.Group as={Col} controlId="formGridDatetimeLocal" className="d-flex flex-row align-items-center">
-                <Form.Label className="mr-2 mb-0">Confira a agenda: </Form.Label>
-                <input type="datetime-local" />
-              </Form.Group>
-            </Form.Row>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={hideModal}>Cancelar</Button>
-          <Button variant="secondary">Agendar</Button>
-        </Modal.Footer>
-      </Modal>
-    </section>
-  )
-
+        </Form>
+      </section>
+    )
+  }
 }
 
 export default Pedagogia;
