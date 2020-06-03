@@ -1,0 +1,16 @@
+.navbar{
+    background: rgba(34, 11, 80, 0.4);
+}
+
+.nav-item{
+    padding: 0 20px;
+}
+
+.nav-link{
+    color: white;    
+}
+
+.link_login{
+    border: white 1px solid;
+    border-radius: 25px;
+}

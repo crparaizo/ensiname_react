@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
+import './menu.css';
 
 class Menu extends Component {
     render() {
         return (
             <div>
                 <nav className="navbar navbar-expand-lg">
-                    <div className="">
-                        <img src={require("../../src/img/logo.svg")} alt="logotipo" height="32px" />
+                    <div className="imgMenu">
+                        <img style={{color:"white"}} src={require("../../src/img/logoBranco.png")} alt="logotipo" height="60px" />
                     </div>
                     <div className="collapse navbar-collapse n" >
                         <ul className="navbar-nav ml-auto">
@@ -22,8 +23,8 @@ class Menu extends Component {
                             <li className="nav-item active">
                                 <a className="nav-link" href="/aula">Aula</a>
                             </li>
-                            <li className="nav-item active">
-                                <a className="nav-link" href="/login">Login</a>
+                            <li className="nav-item active link_login">
+                                <a className="nav-link " href="/login">Login</a>
                             </li>
                         </ul>
                     </div>
