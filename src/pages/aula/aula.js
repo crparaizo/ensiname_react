@@ -1,15 +1,17 @@
 import React from 'react';
 import Menu from './../../components/menu';
 import Footer from './../../components/footer';
-import { Row, Table, Col, Form, Button, Accordion, Card } from 'react-bootstrap';
+import { Row, Table, Col, Form, Button, Accordion, Container } from 'react-bootstrap';
 import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Aula() {
   return (
-    <div className="content">
+    <div className="">
       <Menu />
-      <main className="px-5">
+      <Row className="banner-aula">
+      </Row>
+      <main className="aula px-5">
         <h1 className="mt-5">Plano de Ensino</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non libero mattis, dapibus leo et, sagittis erat. Proin porta libero vel orci euismod, eget lobortis mauris pellentesque. Nam eu luctus ante. In hac habitasse platea dictumst. Etiam auctor eget nunc eu tempus. </p>
 
@@ -67,7 +69,7 @@ function Aula() {
 
           <Form.Row>
             <Form.Group as={Col} xs="12" controlId="exampleForm.ControlTextarea1" className="d-flex justify-content-end">
-              <Button variant="secondary" type="button">
+              <Button variant="primary" type="button" className="ensiname">
                 Enviar
             </Button>
             </Form.Group>
