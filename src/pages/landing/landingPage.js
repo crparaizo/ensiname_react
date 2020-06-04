@@ -2,10 +2,35 @@ import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import './landingPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ModalAluno from './modalLading';
+import ModalProf from './modalLandingProf';
 
-import React from 'react';
+import React, { useState, useRef } from 'react';
 
 function Main() {
+
+    //COMEÇO DA CONFIG MODAL
+    const [dropdown, setDropdown] = useState("");
+    const modalRef = useRef(null);
+
+    const toggleDropdown = () => {
+        console.log("show");
+        //se clicar no botão, modal aparece
+        setDropdown("show");
+        document.body.addEventListener("click", closeDropdown);
+    }
+
+    const closeDropdown = event => {
+        event.stopPropagation(); //impede de executar listeners dos filhos
+        const contain = modalRef.current.contains(event.target);
+        if (!contain) { //se clicar fora do modal, ele DESaparece
+            console.log("hidden");
+            setDropdown("");
+            document.body.removeEventListener("click", closeDropdown);
+        }
+    };
+    //FIM DA CONFIG MODAL
+
     return (
         <div>
             <div className="banner d-flex flex-column">
@@ -54,7 +79,8 @@ function Main() {
                             <li className="cinzaClaro">Atividades Extras</li>
                             <li className="cinzaClaro">Plantão tira dúvidas</li>
                         </ul>
-                        <button className="amarelo">SAIBA MAIS</button>
+                        <button className="amarelo" onClick={toggleDropdown}>SAIBA MAIS</button>
+                        <ModalAluno className={dropdown} modalRef={modalRef} />
                     </div>
                     <div className="plano_card displayFlex">
                         <div className="roxo_escuro">
@@ -69,7 +95,8 @@ function Main() {
                             <li className="cinzaClaro">Atividades Extras</li>
                             <li className="cinzaClaro">Plantão tira dúvidas</li>
                         </ul>
-                        <button className="amarelo">SAIBA MAIS</button>
+                        <button className="amarelo" onClick={toggleDropdown}>SAIBA MAIS</button>
+                        <ModalAluno className={dropdown} modalRef={modalRef} />
                     </div>
                     <div className="plano_card displayFlex">
                         <div className="roxo_escuro">
@@ -84,7 +111,8 @@ function Main() {
                             <li>Atividades Extras</li>
                             <li >Plantão tira dúvidas</li>
                         </ul>
-                        <button className="amarelo">SAIBA MAIS</button>
+                        <button className="amarelo" onClick={toggleDropdown}>SAIBA MAIS</button>
+                        <ModalAluno className={dropdown} modalRef={modalRef} />
                     </div>
                 </div>
             </div>
@@ -96,7 +124,8 @@ function Main() {
                         <p> Já pensou em  focar na sua paixão por ensinar, tomando suas próprias decisões? Se cadastrando em nossa plataforma, você terá flexibilidade e poderá trabalhar de onde e quando quiser.</p>
                         <p> Conquiste mais alunos! Receba feedbacks, fique nas melhores posições de nosso ranking, ganhe visibilidade e ofereça as suas aulas para alunos em todo o Brasil.</p>
                         <div className="btn_prof textCenter">
-                            <button className="amarelo btn_item ">SAIBA MAIS</button>
+                            <button className="amarelo btn_item" onClick={toggleDropdown}>SAIBA MAIS</button>
+                            <ModalProf className={dropdown} modalRef={modalRef} />
                         </div>
                     </div>
                 </div>

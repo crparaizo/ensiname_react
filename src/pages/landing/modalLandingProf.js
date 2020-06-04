@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+/*
 class ModalProf extends Component {
     render() {
         return (
@@ -29,6 +30,20 @@ class ModalProf extends Component {
             </div>
         )
     }
+}
+
+export default ModalProf;
+*/
+
+
+const ModalProf = props => {
+    const { className, modalRef } = props;
+
+    return(
+        <div ref={modalRef} className={`${className} modal`}>
+            <p>Meu modal - PROFESSOR</p>
+        </div>
+    )
 }
 
 export default ModalProf;

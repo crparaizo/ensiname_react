@@ -3,7 +3,7 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    height: 700px;    
+    height: 600px;    
 }
 
 .font36{
@@ -31,18 +31,12 @@
     justify-content: center;  
 }
 
-
-/* GAMBIARRA */
 .conteudo_vantagem{
     z-index: 3;
     height: auto;
     margin-bottom: 85px;
     border: 1px solid black;
     padding: 10px;
-    /* height: 250px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 .img_vantagens{
     z-index: 2;
@@ -51,8 +45,6 @@
     width: 100%;
     height: 260px;  
 }
-/* GAMBIARRA */
-
 
 .roxo{
     background-color: #958AFB;;
@@ -117,7 +109,6 @@
     line-height: 50px;    
 }
 
-/* Problema com a imagem de fundo */
 .professor{
     flex-direction: column;   
     background-image: url(../../img/fundo_professor.png);
@@ -187,3 +178,8 @@
     text-align: center;
     margin-bottom: 50px;
 }
+
+/* Modal */  
+  .show{
+    display: block !important;
+  }

@@ -1,0 +1,26 @@
+.Modal {
+    text-align: center;
+  }
+  
+  .Modal-logo {
+    height: 40vmin;
+  }
+  
+  .Modal-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .Modal-link {
+    color: #09d3ac;
+  }
+  
+  .show{
+    display: block !important;
+  }
