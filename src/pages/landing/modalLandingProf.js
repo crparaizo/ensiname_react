@@ -1,4 +1,17 @@
-import React, { Component } from 'react'
+import React from "react";
+import "./modalLandingProf.css";
+
+const ModalProf = props => {
+    const { className, modalRef } = props;
+
+    return(
+        <div ref={modalRef} className={`${className} modal`}>
+            <p>PROFESSOR!!!</p>
+        </div>
+    )
+}
+
+export default ModalProf;
 
 /*
 class ModalProf extends Component {
@@ -36,14 +49,3 @@ export default ModalProf;
 */
 
 
-const ModalProf = props => {
-    const { className, modalRef } = props;
-
-    return(
-        <div ref={modalRef} className={`${className} modal`}>
-            <p>Meu modal - PROFESSOR</p>
-        </div>
-    )
-}
-
-export default ModalProf;

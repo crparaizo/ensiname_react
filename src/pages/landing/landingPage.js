@@ -125,7 +125,7 @@ function Main() {
                         <p> Conquiste mais alunos! Receba feedbacks, fique nas melhores posições de nosso ranking, ganhe visibilidade e ofereça as suas aulas para alunos em todo o Brasil.</p>
                         <div className="btn_prof textCenter">
                             <button className="amarelo btn_item" onClick={toggleDropdown}>SAIBA MAIS</button>
-                            <ModalProf className={dropdown} modalRef={modalRef} />
+                            {/* <ModalProf className={dropdown} modalRef={modalRef} /> */}
                         </div>
                     </div>
                 </div>
