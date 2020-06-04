@@ -10,10 +10,6 @@ function Main() {
         <div>
             <div className="banner d-flex flex-column">
                 <Menu />
-                <div className="banner-text ml-5">
-                  <h1>Ensina-Me</h1>
-                  <p>Aulas online com professores especializados para o ensino fundamental</p>
-                </div>
             </div>
             <div className="textCenter">
                 <p className="font36">A melhor plataforma para aulas particulares online</p>
@@ -39,7 +35,7 @@ function Main() {
                 <img className="img_vantagens" src={require("../../img/lapis.png")} />
             </div>
             <div className="amarelo textCenter div4 displayFlex">
-                <p className="textTransicao">A melhor qualidade de ensino, com a atenção e o acompanhamento que seu filho merece</p>
+                <p className="textTransicao">"A melhor qualidade de ensino, com a atenção e o acompanhamento que seu filho merece"</p>
             </div>
             <div className="planos textCenter displayFlex">
                 <h2 className="font36">Conheça Nossos Planos</h2>
@@ -58,7 +54,7 @@ function Main() {
                             <li className="cinzaClaro">Atividades Extras</li>
                             <li className="cinzaClaro">Plantão tira dúvidas</li>
                         </ul>
-                        <button className="amarelo branco">SAIBA MAIS</button>
+                        <button className="amarelo">SAIBA MAIS</button>
                     </div>
                     <div className="plano_card displayFlex">
                         <div className="roxo_escuro">
@@ -73,7 +69,7 @@ function Main() {
                             <li className="cinzaClaro">Atividades Extras</li>
                             <li className="cinzaClaro">Plantão tira dúvidas</li>
                         </ul>
-                        <button className="amarelo branco">SAIBA MAIS</button>
+                        <button className="amarelo">SAIBA MAIS</button>
                     </div>
                     <div className="plano_card displayFlex">
                         <div className="roxo_escuro">
@@ -88,18 +84,20 @@ function Main() {
                             <li>Atividades Extras</li>
                             <li >Plantão tira dúvidas</li>
                         </ul>
-                        <button className="amarelo branco">SAIBA MAIS</button>
+                        <button className="amarelo">SAIBA MAIS</button>
                     </div>
                 </div>
             </div>
             <div className="professor displayFlex">
                 <div className="conteudo_professor displayFlex">
                     <div className="texto_professor branco textCenter">
-                        <h2 className="titulo_professor branco font36 displayFlex">Professor</h2>
+                        <h2 className="titulo_professor branco displayFlex">Professor</h2>
                         <h3 className="font22">SEJA PROTAGONISTA DA SUA PRÓPRIA CARREIRA</h3>
                         <p> Já pensou em  focar na sua paixão por ensinar, tomando suas próprias decisões? Se cadastrando em nossa plataforma, você terá flexibilidade e poderá trabalhar de onde e quando quiser.</p>
                         <p> Conquiste mais alunos! Receba feedbacks, fique nas melhores posições de nosso ranking, ganhe visibilidade e ofereça as suas aulas para alunos em todo o Brasil.</p>
-                        <button className="amarelo branco">SAIBA MAIS</button>
+                        <div className="btn_prof textCenter">
+                            <button className="amarelo btn_item ">SAIBA MAIS</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,9 +124,9 @@ function Main() {
                     </div>
                 </div>
                 <div className="mande_duvidas displayFlex">
-                    <h2  className="font36">Mande sua Dúvida</h2>
-                    <p  className="font22">Ficou com alguma dúvida?</p>
-                    <p  className="font22">Estamos à sua disposição!</p>
+                    <h2 className="font36">Mande sua Dúvida</h2>
+                    <p className="font22">Ficou com alguma dúvida?</p>
+                    <p className="font22">Estamos à sua disposição!</p>
 
                     <form className="form_contato displayFlex">
                         <input className="item_form" type="text" placeholder="NOME" />
