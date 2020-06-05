@@ -15,10 +15,10 @@ class Menu extends Component {
                                 <a className="nav-link" href="/">Home</a>
                             </li>
                             <li className="nav-item active">
-                                <a className="nav-link" href="/aluno">Aluno</a>
+                                <a className="nav-link" href="/aluno1">Aluno</a>
                             </li>
                             <li className="nav-item active">
-                                <a className="nav-link" href="/professor">Professor</a>
+                                <a className="nav-link" href="/professor1">Professor</a>
                             </li>
                             <li className="nav-item active">
                                 <a className="nav-link" href="/aula">Aula</a>

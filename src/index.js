@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Main from './pages/landing/landingPage'
 import Login from './pages/login/login'
@@ -18,7 +18,8 @@ import Aula from './pages/aula/aula'
 import NovaConta from './pages/nova_conta/nova_conta'
 import NaoEncontrada from './pages/naoencontrada/naoencontrada'
 
-// import Testando from './pages/landing/teste'
+import ModalAluno from './pages/landing/modalLading'
+import ModalProf from './pages/landing/modalLandingProf'
 
 const rotas = (
     <BrowserRouter>
@@ -35,7 +36,8 @@ const rotas = (
                 <Route exact path="/professor2" component={Professor2} />
                 <Route exact path="/professor3" component={Professor3} />
                 <Route exact path="/aula" component={Aula} />
-                {/* <Route exact path="/teste" component={Testando} /> */}
+                <Route exact path="/planoa" component={ModalAluno} />
+                <Route exact path="/planof" component={ModalProf} />
                 <Route exact path="/new_account" component={NovaConta} />
                 <Route component={NaoEncontrada} /> {/* Esse é o default do Switch, nenhuma outra Route será lida dps disso */}
             </Switch>
