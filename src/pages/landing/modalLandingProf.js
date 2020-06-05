@@ -26,7 +26,7 @@ function ModalProf() {
                 Pensando nisso, queremos oferecer a você toda a estrutura de que necessita para poder focar em oferecer as melhores aulas.
                 Assim, você terá os feedbacks de nossa base de pais e alunos, obtendo o reconhecimento e a visibilidade que merece, podendo, assim, alcançar alunos de todo o Brasil!</p>
             </div>
-            <button className="btna roxo_escuro branco">Cadastre-se já!</button>
+            <button onClick={event =>  window.location.href='/professor1'} className="btna roxo_escuro branco">Cadastre-se já!</button>
         </div>
     )
 }
